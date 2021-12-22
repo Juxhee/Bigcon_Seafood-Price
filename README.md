@@ -17,8 +17,16 @@
 ##
 ### Part2. 수산물 가격 예측
 ##
+#### - fbProphet과 Neural Prophet 사용하여 RMSE가 낮은 모델 채택
+
 ![image](https://user-images.githubusercontent.com/60679596/147020998-22367c04-1115-4de2-80ad-49728fe0fbe8.png)
 
 ![image](https://user-images.githubusercontent.com/60679596/147021019-7b25d831-c0e9-4d43-a970-3d664a7e018f.png)
+
+## 
+
+### Part3. 모델링 결과 
+
+![image](https://user-images.githubusercontent.com/60679596/147021356-3449e8a0-3ef9-4f36-b6ce-99a23e2cc76c.png)
 
 
