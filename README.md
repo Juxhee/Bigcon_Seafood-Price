@@ -52,7 +52,7 @@ class ModelTrunk(keras.Model):
 #### Part2. 수산물 가격 예측
 
 - 오징어, 연어, 흰다리 새우에 대해 각각 fbProphet과 Neural Prophet 사용하여 RMSE가 낮은 모델 채택
-- fbProphet
+- fbProphet (https://facebook.github.io/prophet/docs/quick_start.html#python-api)
 ```python
 import pandas as pd
 from prophet import Prophet
