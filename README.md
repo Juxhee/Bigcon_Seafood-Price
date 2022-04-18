@@ -51,7 +51,33 @@ class ModelTrunk(keras.Model):
 ##
 #### Part2. 수산물 가격 예측
 
-#### - 오징어, 연어, 흰다리 새우에 대해 각각 fbProphet과 Neural Prophet 사용하여 RMSE가 낮은 모델 채택
+- 오징어, 연어, 흰다리 새우에 대해 각각 fbProphet과 Neural Prophet 사용하여 RMSE가 낮은 모델 채택
+- fbProphet
+```python
+import pandas as pd
+from prophet import Prophet
+
+df = pd.read_csv('../examples/example_wp_log_peyton_manning.csv')
+
+m = Prophet()
+m.fit(df)
+
+```
+</br>
+
+- Neural Prophet (https://neuralprophet.com/html/index.html)
+```python
+from neuralprophet import NeuralProphet
+import pandas as pd
+
+df = pd.read_csv('toiletpaper_daily_sales.csv')
+
+m = NeuralProphet()
+metrics = m.fit(df, freq="D")
+forecast = m.predict(df)
+```
+
+
 
 ![image](https://user-images.githubusercontent.com/60679596/147020998-22367c04-1115-4de2-80ad-49728fe0fbe8.png)
 
